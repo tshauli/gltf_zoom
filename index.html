@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+      body { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="setup_model_section">
+      <br>
+      <h2> Please enter a url to a GLTF model</h2>
+      <input type="url" id="gltf_url" style="width:95%" value="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf">
+      <br>
+      <br>
+      <button id="btn_use_model" >Load Model</button>
+    </div>
+    <!-- In case of cdn use this -->
+    <!-- <script type="importmap">
+        {
+          "imports": {
+          "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+        }
+      }
+    </script> -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
